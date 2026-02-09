@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Presentación</title>
+    <title>Tomás Rosselló | Portfolio de Desarrollo Web</title>
 </head>
 <body>
     <header>
         <img src="logo.png" alt="Logo de mi portfolio personal" width="120" height="120">
-        <h1>Presentación de conocimientos sobre desarrollo web</h1>
+        <h1>Tomás Rosselló</h1>
+        <p>Desarrollador web en formación</p>
         <nav>
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
@@ -18,9 +19,11 @@
             </ul>
         </nav>
     </header>
-    <main id="inicio">
-        <h2>¡Bienvenidos a mi presentación!</h2>
-        <p>En esta presentación, plasmaré mis conocimientos sobre el desarrollo web.</p>
+    <main>
+        <section id="inicio">
+            <h2>¡Bienvenidos a mi presentación!</h2>
+            <p>En esta presentación, plasmaré mis conocimientos sobre el desarrollo web.</p>
+        </section>
         <section id="tecnologias">
             <h2>Tecnologías aprendidas </h2>
             <p>Hasta ahora, he aprendido sobre las siguientes tecnologías en el desarrollo web:</p>
@@ -60,6 +63,30 @@
             <p>De momento, he aprendido los <strong>básicos del desarrollo web</strong>, incluyendo la arquitectura cliente-servidor, las diferencias entre Frontend y Backend, y las etiquetas HTML fundamentales. Estoy emocionado por seguir aprendiendo y explorando más sobre el desarrollo web en el futuro.</p>
             <p><em>Parte de los conocimientos que he adquirido en este curso son de:</em> <a href="https://www.efundae.es/" target="_blank" title="eFundae">eFundae</a></p>
         </article>
+        <section id="formu">
+            <h2>Formulario de contacto</h2>
+            <form action="respuestas_formulario.txt" method="post">
+                <fieldset>
+                    <legend>Datos de contacto</legend>
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div>
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Mensaje</legend>
+                    <div>
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea>
+                    </div>
+                </fieldset>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
     </main>
     <footer id="contacto">
         <p>Contacto: <a href="mailto:t.rossello90@gmail.com">t.rossello90@gmail.com</a></p>
