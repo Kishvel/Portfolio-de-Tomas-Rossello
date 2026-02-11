@@ -1,0 +1,77 @@
+/* ================================
+   1. RESET BÁSICO
+================================ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+html {
+  font-size: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p, small {
+  margin: 0;
+}
+
+/* ================================
+   2. VARIABLES GLOBALES
+================================ */
+
+:root {
+  --color-primary: #1e3a8a;
+  --color-secondary: #3b82f6;
+  --color-neutral: #1f2937;
+
+  --font-base-size: 1rem;
+  --spacing-unit: 1rem;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 2rem;
+}
+
+/* ================================
+   3. BASE TIPOGRÁFICA
+================================ */
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                "Segoe UI", Roboto, sans-serif;
+    margin: 0;   
+    font-size: var(--font-base-size);
+    line-height: 1.6;
+    color: var(--color-neutral);
+}
+
+/* ================================
+   4. JERARQUÍA TIPOGRÁFICA
+================================ */
+
+h1 {
+  font-size: var(--text-2xl);
+  margin-bottom: var(--spacing-unit);
+}
+
+h2 {
+  font-size: var(--text-xl);
+  margin-bottom: var(--spacing-unit);
+}
+
+h3 {
+  font-size: var(--text-lg);
+  margin-bottom: var(--spacing-unit);
+}
+
+p {
+  font-size: var(--text-base);
+  margin-bottom: var(--spacing-unit);
+}
+
+small {
+  font-size: var(--text-sm);
+}
